@@ -31,6 +31,8 @@ public class HelloWorldController {
 		
 		name = (name.split(","))[0];
 		
+		validacion.limpiarLista();
+		
 		List<MiUrl> misurls = validacion.obtenerUrls(name);
 		
 		List<String> nombreurl = new ArrayList<String>();
@@ -40,6 +42,7 @@ public class HelloWorldController {
 			}
 		
 		ModelAndView view = new ModelAndView("hello");
+		view.clear();
 		view.addObject("name", name);
 		view.addObject("urls", nombreurl);
 

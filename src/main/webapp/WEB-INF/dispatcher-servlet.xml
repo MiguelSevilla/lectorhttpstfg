@@ -18,6 +18,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
+		
 	</bean>
 	
 </beans>
